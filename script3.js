@@ -15,4 +15,3 @@ while (i >= a && i <= b) {
 	console.log(i ** 2);
 	i++;
 }*/
-console.log(result);*/
