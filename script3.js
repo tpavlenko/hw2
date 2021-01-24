@@ -1,49 +1,18 @@
-// Лекция
-// Реализовать cкрипт универсального калькулятора, который получает от пользователя два значения (a, b), и выводит в консоль результат всех арифметических операций (+, -, *, /).
+// Ввести с клавиатуры 2 числа a и b(где a < b).Запустить цикл перебора от a до b.Вывести в консоль квадраты чётных чисел.
 
-const firstNumber = +prompt('Введите значение a:');
-const secondNumber = +prompt('Введите значение b:');
-const addition = firstNumber + secondNumber;
-const subtraction = firstNumber - secondNumber;
-const multiplication = firstNumber * secondNumber;
-const division = firstNumber / secondNumber;
+let a = +prompt('Enter number a');
+let b = +prompt('Enter number b');
+let i = a;
 
-const result = '**************\n\
-\n\
-При а = ' + firstNumber + ', b = ' + secondNumber + '\n\
-\n\
-Результат:\n\
-\n\
---------------------\n\
-\n\
-a + b = ' + addition + '; a - b = ' + subtraction + '; a * b = ' + multiplication + '; a / b = ' + division + '; \n\
-\n\
--------------------\n\
-\n\
-************** ';
+while (i >= a && i <= b) {
+	if (i % 2 == 0)
+		console.log(i ** 2);
+	i++;
+}
 
-console.log(result);
-
-
-/*const firstNumber = +prompt('Введите значение a:');
-const secondNumber = +prompt('Введите значение b:');
-const addition = firstNumber + secondNumber;
-const subtraction = firstNumber - secondNumber;
-const multiplication = firstNumber * secondNumber;
-const division = firstNumber / secondNumber;
-
-const result = `**************
-
-При а = ${firstNumber}, b = ${secondNumber}
-
-Результат:
-
---------------------
-
-a + b = ${addition}; a - b = ${subtraction}; a * b = ${multiplication}; a / b = ${division};
-
--------------------
-
-**************`;
-
+// Почему так не работает?
+/*while (i >= a && i <= b && i % 2 == 0) {
+	console.log(i ** 2);
+	i++;
+}*/
 console.log(result);*/
