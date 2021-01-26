@@ -4,7 +4,6 @@ let message;
 
 do {
 	message = prompt('Введите число');
-	message++;
 } while (isNaN(message))
 
 
@@ -12,7 +11,6 @@ do {
 
 while (isNaN(message)) {
 	message = prompt('Введите число');
-	message++;
 }*/
 
 
